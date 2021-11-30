@@ -1,14 +1,17 @@
+import { BrowserRouter } from 'react-router-dom'
 import { GlobalStyles } from './styles/Global'
 import { ContainerApp } from './styles/ContainerApp'
+import Header from './components/Header'
 
 function App () {
   return (
-    <>
+    <BrowserRouter>
       <GlobalStyles />
       <ContainerApp>
+        <Header />
         <h1>Ecommerce App</h1>
       </ContainerApp>
-    </>
+    </BrowserRouter>
   )
 }
 
