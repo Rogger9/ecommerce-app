@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "test": "jest --verbose"
   },
   "dependencies": {
     "jest": "27.4.0",
@@ -14,6 +15,8 @@
     "styled-components": "5.3.3"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "5.15.1",
+    "@testing-library/react": "12.1.2",
     "@types/jest": "27.0.3",
     "@types/react": "17.0.0",
     "@types/react-dom": "17.0.0",
@@ -25,6 +28,9 @@
     "vite": "2.6.4"
   },
   "eslintConfig": {
-    "extends": "./node_modules/standard/eslintrc.json"
+    "extends": "./node_modules/standard/eslintrc.json",
+    "env": {
+      "jest": true
+    }
   }
 }
