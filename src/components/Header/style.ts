@@ -8,9 +8,7 @@ export const StyledHeader = styled.header`
   justify-content: space-between;
   padding: 0 1rem;
 
-  a {
-    height: 100%;
-  }
+  a { height: 100%; }
 `
 
 export const StyledLogo = styled.img`
@@ -46,18 +44,9 @@ export const StyledFormSearch = styled.form`
     cursor: pointer;
   }
 
-  /* input[type='text'] {
-    height: 100%;
-    width: 0;
-    border-radius: 1rem;
-    border: 2px solid transparent;
-    outline: none;
-    padding: .2rem 0 .2rem 1.4rem;
-    margin-right: .2rem;
-    transition: width .2s ease-in-out;
-
-    &:focus { border: 2px solid var(--shadow) }
-  } */
+  label[for='check']:hover {
+    box-shadow: 0 0 2px 1px var(--shadow)
+  }
 
   input[type='text'] {
     width: 100%;
@@ -66,7 +55,6 @@ export const StyledFormSearch = styled.form`
     border: none;
     outline: none;
     border-radius: 1rem;
-    /* padding: 0 6rem 0 1.4rem; */
   }
 
   input[type='text']:-webkit-autofill,input[type='text']:-webkit-autofill:focus {
@@ -79,16 +67,32 @@ export const StyledFormSearch = styled.form`
 
   input:checked ~ div { width: 24rem; }
 
-  input:checked ~ div > input { padding: 0 6rem 0 1.4rem; }
+  input:checked ~ div > input { padding: 0 7rem 0 2rem; }
 `
 
 export const BoxInputSearch = styled.div`
   height: 100%;
   width: 2rem;
   background: #FFF;
+  display: flex;
+  align-items: center;
   border-radius: 1rem;
   border: 2px solid transparent;
+  position: relative;
   transition: width .2s ease-in-out;
 
-  &:focus { border: 2px solid var(--shadow) }
+  input:focus { box-shadow: 0 0 4px var(--shadow) }
+
+  svg {
+    position: absolute;
+    left: .4rem;
+    cursor: pointer;
+
+    &:hover { opacity: .6; }
+  }
+
+  button {
+    position: absolute;
+    right: 2.2rem;
+  }
 `
