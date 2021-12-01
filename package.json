@@ -22,15 +22,25 @@
     "@types/react-dom": "17.0.0",
     "@types/react-router-dom": "5.3.2",
     "@types/styled-components": "5.1.15",
+    "@typescript-eslint/parser": "4.33.0",
     "@vitejs/plugin-react": "1.0.0",
-    "standard": "16.0.4",
+    "ts-standard": "11.0.0",
     "typescript": "4.3.2",
     "vite": "2.6.4"
   },
   "eslintConfig": {
-    "extends": "./node_modules/standard/eslintrc.json",
+    "extends": "./node_modules/ts-standard/eslintrc.json",
     "env": {
       "jest": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "project": [
+        "/home/roger/GITHUB/ecommerce-app"
+      ]
+    },
+    "rules": {
+      "@typescript-eslint/explicit-function-return-type": "off"
     }
   }
 }
