@@ -18,6 +18,7 @@ export const StyledLogo = styled.img`
 
 export const StyledNav = styled.nav`
   display: flex;
+  align-items: center;
   gap: 1rem;
 `
 
