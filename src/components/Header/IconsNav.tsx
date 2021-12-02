@@ -1,44 +1,25 @@
-import { useLocation, Link } from 'react-router-dom'
+import { Route, Link, Routes } from 'react-router-dom'
 import { $HOME, $USER } from '../../routes'
 import IconExit from '../IconExit'
 import IconHeart from '../IconHeart'
 import IconShoppingCart from '../IconShoppingCart'
 import IconUser from '../IconUser'
 
-const pathUser = () => (
+const PathUser = () => (
   <>
     <IconHeart />
     <Link to={$HOME}><IconExit /></Link>
   </>
 )
 
-interface IPaths {
-  [key: string]: JSX.Element
-}
-
-const paths: IPaths = {
-  $HOME: <Link to={$USER}><IconUser /></Link>,
-  $USER: pathUser()
-}
-
-const IconsNav = () => {
-  const location = useLocation()
-  const { pathname } = location
-  console.log(paths)
-  return (
-    <>
-      <IconShoppingCart />
-      {/* {pathname === $HOME && <Link to={$USER}><IconUser /></Link>}
-      {pathname === $USER && (
-        <>
-          <IconHeart />
-          <Link to={$HOME}><IconExit /></Link>
-        </>
-      )} */}
-
-      {paths[pathname]}
-    </>
-  )
-}
+const IconsNav = () => (
+  <>
+    <IconShoppingCart />
+    <Routes>
+      <Route path={$HOME} element={<Link to={$USER}><IconUser /></Link>} />
+      <Route path={$USER} element={<PathUser />} />
+    </Routes>
+  </>
+)
 
 export default IconsNav
