@@ -11,7 +11,7 @@ export const GlobalStyles = createGlobalStyle`
     --contrast: #9BA4B4;
   }
 
-  [data-theme='light'] {
+  [theme='light'] {
     --primary: #F1F6F9;
     --fontColor: #2C2C2C;
     --colorSwitch: #DDE3E7;
