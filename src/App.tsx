@@ -2,8 +2,11 @@ import { BrowserRouter } from 'react-router-dom'
 import { GlobalStyles } from './styles/Global'
 import { ContainerApp } from './styles/ContainerApp'
 import Header from './components/Header'
+import { checkPrevUserTheme } from './utils/checkUserTheme'
 
 function App () {
+  checkPrevUserTheme()
+
   return (
     <BrowserRouter>
       <GlobalStyles />
