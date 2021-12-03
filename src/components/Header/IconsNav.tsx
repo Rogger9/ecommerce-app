@@ -4,6 +4,7 @@ import IconExit from '../IconExit'
 import IconHeart from '../IconHeart'
 import IconShoppingCart from '../IconShoppingCart'
 import IconUser from '../IconUser'
+import SwitchTheme from './SwitchTheme'
 
 const PathUser = () => (
   <>
@@ -14,6 +15,7 @@ const PathUser = () => (
 
 const IconsNav = () => (
   <>
+    <SwitchTheme />
     <IconShoppingCart />
     <Routes>
       <Route path={$HOME} element={<Link to={$USER}><IconUser /></Link>} />

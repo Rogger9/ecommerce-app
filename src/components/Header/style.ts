@@ -25,6 +25,8 @@ export const StyledNav = styled.nav`
   align-items: center;
   gap: 1.4rem;
 
+  & > svg { cursor: pointer; }
+
   @media (max-width: 340px) {
     gap: .6rem;
   }
@@ -111,9 +113,7 @@ export const StyledFormSearch = styled.form`
 
     input:checked ~ div > input { padding: 0 5rem 0 2rem; }
 
-    label[for='check'] {
-      z-index: 100;
-    }
+    label[for='check'] { z-index: 100; }
   }
 
   @media (max-width: 540px) {
@@ -125,19 +125,13 @@ export const StyledFormSearch = styled.form`
   }
 
   @media (max-width: 440px) {
-    div {
-      transform: translate(-6rem,2.4rem);
-    }
+    div { transform: translate(-6rem,2.4rem); }
   }
 
   @media (max-width: 340px) {
-    div {
-      transform: translate(-4rem,2.4rem);
-    }
+    div { transform: translate(-4rem,2.4rem); }
 
-    input:checked ~ div {
-      width: 17rem;
-    }
+    input:checked ~ div { width: 17rem; }
   }
 `
 
@@ -168,8 +162,40 @@ export const BoxInputSearch = styled.div`
   }
 
   @media (max-width: 650px) {
-    button {
-      right: 1rem;
-    }
+    button { right: 1rem; }
+  }
+`
+
+export const StyledSwitch = styled.label`
+  width: 2.2rem;
+  height: 1.2rem;
+  background: var(--contrast);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+
+  input { display: none; }
+
+  span {
+    width: 1rem;
+    height: 1rem;
+    background: var(--secundary);
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    margin: 0 2px;
+    transition: width .2s ease-in-out;
+  }
+
+  span:hover {
+    box-shadow: inset 0 0 3px var(--contrast);
+  }
+
+  input:checked ~ span {
+    left: auto;
+    right: 0;
   }
 `
