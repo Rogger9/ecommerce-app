@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { ChangeEventForm, ChangeEventInput } from '../../types'
 import IconsBoxInput from './IconsBoxInput'
-import IconSearch from '../IconSearch'
+import Icon from '../Icon'
 import { BoxInputSearch, StyledFormSearch } from './style'
 
 const FormSearch = () => {
@@ -28,7 +28,7 @@ const FormSearch = () => {
         }
       </BoxInputSearch>
       <label htmlFor='check' onClick={resetKeyword}>
-        <IconSearch />
+        <Icon iconStyle='fas' icon='search' size='1x' />
       </label>
     </StyledFormSearch>
   )

@@ -1,24 +1,21 @@
 import { Route, Link, Routes } from 'react-router-dom'
 import { $HOME, $USER } from '../../routes'
-import IconExit from '../IconExit'
-import IconHeart from '../IconHeart'
-import IconShoppingCart from '../IconShoppingCart'
-import IconUser from '../IconUser'
 import SwitchTheme from './SwitchTheme'
+import Icon from '../Icon'
 
 const PathUser = () => (
   <>
-    <IconHeart />
-    <Link to={$HOME}><IconExit /></Link>
+    <Icon iconStyle='fas' icon='heart' />
+    <Link to={$HOME}><Icon iconStyle='fas' icon='sign-out-alt' /></Link>
   </>
 )
 
 const IconsNav = () => (
   <>
     <SwitchTheme />
-    <IconShoppingCart />
+    <Icon iconStyle='fas' icon='shopping-cart' />
     <Routes>
-      <Route path={$HOME} element={<Link to={$USER}><IconUser /></Link>} />
+      <Route path={$HOME} element={<Link to={$USER}><Icon iconStyle='fas' icon='user' /></Link>} />
       <Route path={$USER} element={<PathUser />} />
     </Routes>
   </>

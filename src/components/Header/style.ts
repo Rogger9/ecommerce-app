@@ -8,7 +8,7 @@ export const StyledHeader = styled.header`
   justify-content: space-between;
   padding: 0 1.4rem;
 
-  a { height: 100%; }
+  a:first-child { height: 100%; }
 
   @media (max-width: 340px) {
     padding: 0 .8rem;
@@ -51,13 +51,16 @@ export const StyledFormSearch = styled.form`
     position: absolute;
     right: 0;
     border-radius: 50%;
-    border: 2px solid var(--shadow);
+    border: 2px solid var(--contrast);
     cursor: pointer;
   }
 
+
   label[for='check']:hover {
-    box-shadow: 0 0 2px 1px var(--shadow)
+    box-shadow: 0 0 3px var(--contrast)
   }
+
+  label > svg { color: var(--contrast); }
 
   input[type='text'] {
     width: 100%;
@@ -149,11 +152,12 @@ export const BoxInputSearch = styled.div`
   input:focus { box-shadow: 0 0 4px var(--shadow) }
 
   svg {
+    color: var(--black);
     position: absolute;
-    left: .4rem;
+    left: .6rem;
     cursor: pointer;
 
-    &:hover { opacity: .6; }
+    &:hover { color: var(--contrast); }
   }
 
   button {

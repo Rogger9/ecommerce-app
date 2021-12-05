@@ -1,5 +1,5 @@
 import Button from '../Button'
-import IconClose from '../IconClose'
+import Icon from '../Icon'
 
 interface IShowIcons {
   resetKeyword: () => void
@@ -7,7 +7,7 @@ interface IShowIcons {
 
 const IconsBoxInput = ({ resetKeyword }: IShowIcons) => (
   <>
-    <IconClose onClick={resetKeyword} />
+    <Icon iconStyle='fas' icon='times' size='1x' handleClick={resetKeyword} />
     <Button value='Buscar' />
   </>
 )
