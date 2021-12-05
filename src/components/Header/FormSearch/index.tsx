@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { ChangeEventForm, ChangeEventInput } from '../../types'
+import { ChangeEventForm, ChangeEventInput } from '../../../types'
 import IconsBoxInput from './IconsBoxInput'
-import Icon from '../Icon'
+import Icon from '../../Icon'
 import { BoxInputSearch, StyledFormSearch } from './style'
 
 const FormSearch = () => {
