@@ -9,6 +9,8 @@ export const GlobalStyles = createGlobalStyle`
     --secundary: #20262E;
     --shadow: #C4C4C4;
     --contrast: #9BA4B4;
+    --black: #2C2C2C;
+    --blackOpacity: #2C2C2C99;
   }
 
   [theme='light'] {
