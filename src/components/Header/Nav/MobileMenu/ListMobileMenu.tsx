@@ -5,9 +5,11 @@ interface IListMenu {
   [key: string]: string
 }
 
-const menu: IListMenu[] = [{ id: 'login', value: 'Iniciar Sesión' }, { id: 'shopping', value: 'Carrito' }]
+interface IListMobileMenu {
+  menu: IListMenu[]
+}
 
-const ListMobileMenu = () => (
+const ListMobileMenu = ({ menu }: IListMobileMenu) => (
   <StyledListMobileMenu>
     {
       menu.map(({ id, value }) => <LiMenu key={id} id={id} value={value} />)
