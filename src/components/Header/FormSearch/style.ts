@@ -53,11 +53,15 @@ export const StyledFormSearch = styled.form`
 
   input:checked ~ div > input { padding: 0 7rem 0 2rem; }
 
+  @media (max-width: 768px) {
+    margin-right: .6rem;
+  }
+
   @media (max-width: 650px) {
     div {
       opacity: 0;
       visibility: hidden;
-      transform: translate(.24rem, 2.4rem);
+      transform: translate(.24rem, 2.36rem);
       transition: opacity .2s ease-in-out;
       z-index: 100;
     }
@@ -87,22 +91,20 @@ export const StyledFormSearch = styled.form`
     label[for='check'] { z-index: 100; }
   }
 
-  @media (max-width: 540px) {
+  @media (max-width: 580px) {
     div {
       position: fixed;
       height: 2rem;
-      transform: translate(-9.8rem,2.4rem);
+      transform: translate(-6rem, 2.36rem);
     }
   }
 
   @media (max-width: 440px) {
-    div { transform: translate(-6rem,2.4rem); }
+    div { transform: translate(-3.4rem, 2.36rem); }
   }
 
   @media (max-width: 340px) {
-    div { transform: translate(-4rem,2.4rem); }
-
-    input:checked ~ div { width: 17rem; }
+    input:checked ~ div { width: 18rem; }
   }
 `
 
