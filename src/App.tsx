@@ -3,6 +3,7 @@ import { GlobalStyles } from './styles/Global'
 import { ContainerApp } from './styles/ContainerApp'
 import Header from './components/Header'
 import { checkPrevUserTheme } from './utils/checkUserTheme'
+import Main from './components/Main'
 
 function App () {
   checkPrevUserTheme()
@@ -12,7 +13,7 @@ function App () {
       <GlobalStyles />
       <ContainerApp>
         <Header />
-        <h1>Ecommerce App</h1>
+        <Main />
       </ContainerApp>
     </BrowserRouter>
   )
