@@ -1,5 +1,5 @@
 import Icon from '../Icon'
-import ListNav from './ListNav'
+import MenuNav from './MenuNav'
 import { StyledNavBar, StyledSwitchNavBar } from './style'
 
 const NavBar = () => (
@@ -8,7 +8,7 @@ const NavBar = () => (
       <Icon iconStyle='fas' icon='compress-arrows-alt' size='1x' />
     </StyledSwitchNavBar>
     <input type='checkbox' name='switchNavBar' id='switchNavBar' />
-    <ListNav />
+    <MenuNav />
   </StyledNavBar>
 )
 
