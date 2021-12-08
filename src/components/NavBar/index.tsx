@@ -1,13 +1,14 @@
 import Icon from '../Icon'
+import ListNav from './ListNav'
 import { StyledNavBar, StyledSwitchNavBar } from './style'
 
 const NavBar = () => (
   <StyledNavBar>
     <StyledSwitchNavBar htmlFor='switchNavBar'>
-      <input type='checkbox' name='switchNavBar' id='switchNavBar' />
       <Icon iconStyle='fas' icon='compress-arrows-alt' size='1x' />
-      <h3>NavBar</h3>
     </StyledSwitchNavBar>
+    <input type='checkbox' name='switchNavBar' id='switchNavBar' />
+    <ListNav />
   </StyledNavBar>
 )
 
