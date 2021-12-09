@@ -7,4 +7,5 @@ export interface IMenuListNav {
   name: string
   icon: IconProp
   subMenu?: string[]
+  normalSize?: boolean
 }

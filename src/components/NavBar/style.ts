@@ -22,10 +22,9 @@ export const StyledNavBar = styled.nav`
 
   input { display: none; }
 
-  ul { transition: width .2s ease-in-out; }
+  ul { width: 14rem; transition: width .2s ease-in-out; }
 
   input:checked ~ ul {
-    color: red;
-    width: 14rem;
+    width: auto;
   }
 `

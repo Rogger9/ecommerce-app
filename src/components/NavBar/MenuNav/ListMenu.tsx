@@ -4,11 +4,11 @@ import Icon from '../../Icon'
 import { StyledLiMenu } from './style'
 import SubListNav from './SubListNav'
 
-const ListMenu = ({ name, icon, subMenu }: IMenuListNav) => (
+const ListMenu = ({ name, icon, subMenu, normalSize = true }: IMenuListNav) => (
   <StyledLiMenu>
     <Link to='#'>
       <div><Icon iconStyle='fas' icon={icon} /></div>
-      {name}
+      {normalSize && name}
     </Link>
     {
       subMenu !== undefined && <SubListNav subMenu={subMenu} />
