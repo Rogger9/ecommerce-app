@@ -10,8 +10,8 @@ export const StyledMenuNav = styled.ul`
 
 export const StyledLiMenu = styled.li`
   position: relative;
-  padding-right: 1rem;
   border-radius: .2rem;
+  border-bottom: 1px solid var(--contrast);
 
   div { width: 3rem; }
 

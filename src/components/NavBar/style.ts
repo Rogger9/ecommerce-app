@@ -24,7 +24,5 @@ export const StyledNavBar = styled.nav`
 
   ul { width: 14rem; transition: width .2s ease-in-out; }
 
-  input:checked ~ ul {
-    width: auto;
-  }
+  input:checked ~ ul { width: auto; }
 `
