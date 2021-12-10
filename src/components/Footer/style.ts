@@ -16,6 +16,7 @@ export const StyledFooter = styled.footer`
   @media (max-width: 480px) {
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: .4rem 1rem;
   }
 `
 
@@ -24,5 +25,4 @@ export const StyledIcons = styled.section`
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  line-height: 1.6rem;
 `

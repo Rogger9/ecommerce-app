@@ -26,6 +26,7 @@ export const StyledListMobileMenu = styled.ul`
   list-style: none;
   line-height: 2.4rem;
   font-weight: bold;
+  z-index: 100;
 
   & > li { width: 100%; }
 `

@@ -31,6 +31,7 @@ export const StyledNavBar = styled.nav`
   @media (max-width: 768px) {
     height: auto;
     padding: 0 2rem 0 0;
+    border-radius: 0;
 
     input:checked ~ ul { flex-direction: column; }
   }

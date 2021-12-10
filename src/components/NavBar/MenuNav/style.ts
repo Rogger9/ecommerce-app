@@ -43,7 +43,7 @@ export const StyledLiMenu = styled.li`
     top: 0;
     left: 100%;
     border-radius: .2rem;
-    box-shadow: 0 0 2px var(--blackOpacity);
+    box-shadow: 0 0 1px 1px var(--shadow);
 
     li { padding: 0 2rem; }
   }
@@ -65,7 +65,9 @@ export const StyledLiMenu = styled.li`
     }
   }
 
-  @media (max-width: 320px) {
+  @media (max-width: 420px) {
     a { gap: 2rem; }
+
+    ul { left: 0; right: auto; }
   }
 `
