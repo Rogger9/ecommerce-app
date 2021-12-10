@@ -1,11 +1,19 @@
 import styled from 'styled-components'
 
 export const StyledMenuNav = styled.ul`
+  width: 14rem;
   line-height: 3rem;
   list-style: none;
   font-weight: bold;
+  transition: width .2s ease-in-out;
 
   svg { cursor: pointer; }
+
+  @media (max-width: 768px) {
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
 `
 
 export const StyledLiMenu = styled.li`
@@ -43,4 +51,21 @@ export const StyledLiMenu = styled.li`
   &:hover { background: var(--contrast); }
 
   &:hover > ul { display: block; }
+
+  @media (max-width: 768px) {
+    border-bottom: none;
+
+    a { gap: 6rem; }
+
+    ul {
+      top: 100%;
+      left: auto;
+      right: 0;
+      z-index: 20;
+    }
+  }
+
+  @media (max-width: 320px) {
+    a { gap: 2rem; }
+  }
 `

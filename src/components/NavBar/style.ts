@@ -11,6 +11,10 @@ export const StyledSwitchNavBar = styled.label`
     margin: .6rem;
     cursor: pointer;
   }
+
+  @media (max-width: 768px) {
+    svg { top: auto; bottom: 0; }
+  }
 `
 
 export const StyledNavBar = styled.nav`
@@ -22,7 +26,12 @@ export const StyledNavBar = styled.nav`
 
   input { display: none; }
 
-  ul { width: 14rem; transition: width .2s ease-in-out; }
-
   input:checked ~ ul { width: auto; }
+
+  @media (max-width: 768px) {
+    height: auto;
+    padding: 0 2rem 0 0;
+
+    input:checked ~ ul { flex-direction: column; }
+  }
 `
