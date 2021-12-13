@@ -18,6 +18,7 @@ export const StyledSwitchNavBar = styled.label`
 `
 
 export const StyledNavBar = styled.nav`
+  grid-area: nav;
   background: var(--secundary);
   height: calc(100vh - 4rem);
   border-radius: .2rem;

@@ -1,9 +1,19 @@
 import styled from 'styled-components'
 
 export const StyledMain = styled.main`
-  display: flex;
+  grid-area: main;
+  display: grid;
+  grid:
+    'nav' 'main' 1fr /
+    auto    1fr
+  ;
+  height: calc(100vh - 4rem);
 
   @media (max-width: 768px) {
-    flex-direction: column;
+    grid:
+      'nav' auto
+      'main'  1fr /
+      100%
+    ;
   }
 `
