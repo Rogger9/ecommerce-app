@@ -1,9 +1,10 @@
 import Footer from '../../Footer'
 import { StyledContentMain } from './style'
+import View from './View'
 
 const ContentMain = () => (
   <StyledContentMain>
-    <h2>Conntent Main</h2>
+    <View />
     <Footer />
   </StyledContentMain>
 )
