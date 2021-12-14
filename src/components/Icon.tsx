@@ -9,10 +9,11 @@ library.add(fab, far, fas)
 interface IconProps {
   iconStyle: string
   handleClick?: React.MouseEventHandler<SVGSVGElement>
+  classN?: string
 }
 
-const Icon = ({ iconStyle, icon, size = 'lg', handleClick }: IconProps & FontAwesomeIconProps) => (
-  <FontAwesomeIcon icon={[iconStyle as IconPrefix, icon as IconName]} size={size} onClick={handleClick} />
+const Icon = ({ iconStyle, icon, size = 'lg', handleClick, classN }: IconProps & FontAwesomeIconProps) => (
+  <FontAwesomeIcon icon={[iconStyle as IconPrefix, icon as IconName]} size={size} onClick={handleClick} className={classN} />
 )
 
 export default Icon
