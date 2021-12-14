@@ -1,8 +1,9 @@
+import Slider from '../../Slider'
 import { StyledView } from './style'
 
 const View = () => (
   <StyledView>
-    Content
+    <Slider />
   </StyledView>
 )
 
