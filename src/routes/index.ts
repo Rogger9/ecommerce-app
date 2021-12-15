@@ -1,2 +1,2 @@
 export const $HOME = '/ecommerce'
-export const $USER = `${$HOME}/user`
+export const $USER = '/user'
