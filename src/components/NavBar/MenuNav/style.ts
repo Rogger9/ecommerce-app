@@ -44,6 +44,7 @@ export const StyledLiMenu = styled.li`
     left: 100%;
     border-radius: .2rem;
     box-shadow: 0 0 1px 1px var(--shadow);
+    z-index: 20;
 
     li { padding: 0 2rem; }
   }
@@ -61,7 +62,6 @@ export const StyledLiMenu = styled.li`
       top: 100%;
       left: auto;
       right: 0;
-      z-index: 20;
     }
   }
 
