@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { DivFlex } from '../../../styles/DivFlex'
 
 export const StyledNav = styled.nav`
   display: flex;
@@ -14,8 +15,7 @@ export const StyledNav = styled.nav`
   }
 `
 
-export const StyledIconsNav = styled.div`
-  display: flex;
+export const StyledIconsNav = styled(DivFlex)`
   gap: 1.4rem;
 
   & > svg { cursor: pointer; }

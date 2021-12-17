@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { SectionFlex } from '../../styles/SectionFlex'
 
 export const StyledFooter = styled.footer`
   grid-area: footer;
@@ -21,9 +22,6 @@ export const StyledFooter = styled.footer`
   }
 `
 
-export const StyledIcons = styled.section`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+export const StyledIcons = styled(SectionFlex)`
   gap: 1rem;
 `

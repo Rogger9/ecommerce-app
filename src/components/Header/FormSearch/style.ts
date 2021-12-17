@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { DivFlex } from '../../../styles/DivFlex'
 
 export const StyledFormSearch = styled.form`
   height: 2rem;
@@ -108,12 +109,10 @@ export const StyledFormSearch = styled.form`
   }
 `
 
-export const BoxInputSearch = styled.div`
+export const BoxInputSearch = styled(DivFlex)`
   height: 100%;
   width: 2rem;
   background: #FFF;
-  display: flex;
-  align-items: center;
   border-radius: 1rem;
   border: 2px solid transparent;
   position: relative;

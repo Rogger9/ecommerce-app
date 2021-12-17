@@ -1,12 +1,9 @@
 import styled from 'styled-components'
+import { SectionContentMain } from '../../styles/SectionContentMain'
 
-export const StyledAbout = styled.section`
-  height: 100%;
-  display: flex;
+export const StyledAbout = styled(SectionContentMain)`
   flex-direction: column;
-  align-items: center;
   gap: 2rem;
-  padding: 1rem;
   animation: move 2s ease-in-out;
 
   @keyframes move {

@@ -1,9 +1,8 @@
 import styled from 'styled-components'
+import { SectionFlex } from '../../styles/SectionFlex'
 
-export const StyledSlider = styled.section`
+export const StyledSlider = styled(SectionFlex)`
   height: 14rem;
-  display: inline-flex;
-  justify-content: center;
   margin: .4rem 0;
   position: relative;
   font-size: .88rem;
