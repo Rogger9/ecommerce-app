@@ -7,6 +7,7 @@ export const StyledMain = styled.main`
     'nav' 'main' 1fr /
     auto    1fr
   ;
+  width: 100%;
   height: calc(100vh - 4rem);
 
   @media (max-width: 768px) {
