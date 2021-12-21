@@ -3,10 +3,10 @@ import { StyledButton } from '../styles/StyledButton'
 interface IButton {
   value: string
   label: string
-  page: boolean
+  page?: boolean
 }
 
-const Button = ({ value, label, page }: IButton) => (
+const Button = ({ value, label, page = false }: IButton) => (
   <StyledButton aria-label={label} page={page}>{value}</StyledButton>
 )
 

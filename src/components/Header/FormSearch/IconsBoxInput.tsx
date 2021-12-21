@@ -8,7 +8,7 @@ interface IShowIcons {
 const IconsBoxInput = ({ resetKeyword }: IShowIcons) => (
   <>
     <Icon iconStyle='fas' icon='times' size='1x' handleClick={resetKeyword} />
-    <Button label='search' value='Buscar' page={false} />
+    <Button label='search' value='Buscar' />
   </>
 )
 
