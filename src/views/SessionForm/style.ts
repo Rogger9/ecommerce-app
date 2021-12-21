@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { DivFlex } from '../../styles/DivFlex'
+import { FormFlex } from '../../styles/FormFlex'
 
 export const StyledSessionForm = styled(DivFlex)`
   width: 70%;
@@ -14,24 +15,6 @@ export const StyledSessionForm = styled(DivFlex)`
   ;
   position: relative;
   padding: 1rem;
-
-  form {
-    width: 66%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1.2rem;
-    padding: .4rem;
-
-    @media ( max-width: 820px ) {
-      width: 80%;
-    }
-
-    @media ( max-width: 320px ) {
-      width: 90%;
-    }
-  }
 
   & > svg { cursor: pointer; }
 
@@ -64,6 +47,21 @@ export const StyledSessionForm = styled(DivFlex)`
     & > svg:first-child { margin: .6rem }
 
     h2 { font-size: 1.1rem; margin: .4rem 0; }
+  }
+`
+
+export const StyledForm = styled(FormFlex)`
+  width: 66%;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: .4rem;
+
+  @media ( max-width: 820px ) {
+    width: 80%;
+  }
+
+  @media ( max-width: 320px ) {
+    width: 90%;
   }
 `
 
