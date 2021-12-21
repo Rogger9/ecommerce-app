@@ -9,3 +9,7 @@ export interface IMenuListNav {
   subMenu?: string[]
   normalSize?: boolean
 }
+
+export interface IListForm {
+  [key:string]: string
+}

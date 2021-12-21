@@ -3,7 +3,8 @@ import { GlobalStyles } from './styles/Global'
 import { ContainerApp } from './styles/ContainerApp'
 import { checkPrevUserTheme } from './utils/checkUserTheme'
 import Home from './views/Home'
-import { $HOME } from './routes'
+import { $ACCOUNTS, $HOME } from './routes'
+import SessionForm from './views/SessionForm'
 
 function App () {
   checkPrevUserTheme()
@@ -14,6 +15,7 @@ function App () {
       <ContainerApp>
         <Routes>
           <Route path={$HOME + '/*'} element={<Home />} />
+          <Route path={$HOME + $ACCOUNTS + '/*'} element={<SessionForm />} />
         </Routes>
       </ContainerApp>
     </BrowserRouter>

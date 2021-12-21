@@ -1,3 +1,6 @@
 export const $HOME = '/ecommerce'
 export const $USER = '/user'
 export const $ABOUT = '/about'
+export const $ACCOUNTS = '/accounts'
+export const $LOGIN = '/login'
+export const $REGISTER = '/register'
