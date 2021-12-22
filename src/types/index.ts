@@ -10,6 +10,10 @@ export interface IMenuListNav {
   normalSize?: boolean
 }
 
+export interface IListMenu {
+  [key: string]: string
+}
+
 export interface IListForm {
   [key:string]: string
 }
