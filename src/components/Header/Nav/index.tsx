@@ -1,9 +1,11 @@
+import { lazy } from 'react'
 import { useScreenWidth } from '../../../hooks/useScreenWidth'
 import FormSearch from '../FormSearch'
 import SwitchTheme from '../SwitchTheme'
-import IconsNav from './IconsNav'
-import MobileMenu from './MobileMenu'
 import { StyledNav } from './style'
+
+const MobileMenu = lazy(() => import('./MobileMenu'))
+const IconsNav = lazy(() => import('./IconsNav'))
 
 const Nav = () => {
   const { isMobileScreen } = useScreenWidth()

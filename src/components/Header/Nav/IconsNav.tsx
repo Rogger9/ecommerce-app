@@ -1,8 +1,10 @@
+import { lazy } from 'react'
 import { Route, Link, Routes } from 'react-router-dom'
 import { $ACCOUNTS, $HOME, $LOGIN, $USER } from '../../../routes'
 import Icon from '../../Icon'
-import IconsPathUser from './IconsPathUser'
 import { StyledIconsNav } from './style'
+
+const IconsPathUser = lazy(() => import('./IconsPathUser'))
 
 const IconsNav = () => (
   <StyledIconsNav>

@@ -23,9 +23,7 @@ const FormSearch = () => {
       <input type='checkbox' name='check' id='check' />
       <BoxInputSearch>
         <input type='text' name='keywordSearch' id='keywordSearch' value={keyword} onChange={handleChange} />
-        {
-          keywordLength && <IconsBoxInput resetKeyword={resetKeyword} />
-        }
+        { keywordLength && <IconsBoxInput resetKeyword={resetKeyword} /> }
       </BoxInputSearch>
       <label htmlFor='check' onClick={resetKeyword}>
         <Icon iconStyle='fas' icon='search' size='1x' />

@@ -1,8 +1,10 @@
+import { lazy } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { $ABOUT } from '../../../routes'
-import About from '../../../views/About'
-import Slider from '../../Slider'
 import { StyledView } from './style'
+
+const Slider = lazy(() => import('../../Slider'))
+const About = lazy(() => import('../../../views/About'))
 
 const View = () => (
   <StyledView>

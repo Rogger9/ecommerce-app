@@ -1,7 +1,9 @@
+import { lazy } from 'react'
 import { useSlider } from '../../hooks/useSlider'
 import { sliderImages } from '../../utils/sliderImages'
-import Icon from '../Icon'
 import { StyledIconsContent, StyledSlider } from './style'
+
+const Icon = lazy(() => import('../Icon'))
 
 const inicialState = 0
 const restartState: number = sliderImages.length - 1

@@ -1,8 +1,9 @@
-interface ILiMenu {
-  [key: string]: string
+interface IProps {
+  value: string
+  id: string
 }
 
-const LiMenu = ({ value, id }: ILiMenu) => (
+const LiMenu = ({ value, id }: IProps) => (
   <li id={id}>{value}</li>
 )
 

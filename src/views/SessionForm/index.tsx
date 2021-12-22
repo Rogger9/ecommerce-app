@@ -1,10 +1,12 @@
 import { Link, Route, Routes, useNavigate } from 'react-router-dom'
 import Icon from '../../components/Icon'
-import Login from './Login'
-import Register from './Register'
 import OtherLoginOptions from './OtherLoginOptions'
 import { $LOGIN, $REGISTER } from '../../routes'
 import { LineDivisor, StyledSessionForm } from './style'
+import { lazy } from 'react'
+
+const Login = lazy(() => import('./Login'))
+const Register = lazy(() => import('./Register'))
 
 const SessionForm = () => {
   const navegate = useNavigate()
