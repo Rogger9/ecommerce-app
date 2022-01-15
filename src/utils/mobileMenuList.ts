@@ -1,4 +1,5 @@
-import { IListMenu } from '../types'
+import { $ACCOUNTS, $HOME, $LOGIN } from '../routes'
+import { IListMenu, IPathTo } from '../types'
 
 export const menu: IListMenu[] = [
   { id: 'login', value: 'Iniciar Sesión' },
@@ -10,3 +11,7 @@ export const menu2: IListMenu[] = [
   { id: 'favorites', value: 'Favoritos' },
   { id: 'logout', value: 'Cerrar Sesión' }
 ]
+
+export const navigatePaths: IPathTo = {
+  login: $HOME + $ACCOUNTS + $LOGIN
+}
