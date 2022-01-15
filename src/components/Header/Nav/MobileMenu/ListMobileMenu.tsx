@@ -1,9 +1,9 @@
-import { IListMenu } from '../../../../types'
+import { GenericKeyString } from '../../../../types'
 import LiMenu from './LiMenu'
 import { StyledListMobileMenu } from './style'
 
 interface IListMobileMenu {
-  menu: IListMenu[]
+  menu: GenericKeyString<string>[]
 }
 
 const ListMobileMenu = ({ menu }: IListMobileMenu) => (

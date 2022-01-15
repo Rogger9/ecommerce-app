@@ -1,6 +1,6 @@
-import { IListForm } from '../types'
+import { GenericKeyString } from '../types'
 
-export const registerList: IListForm[] = [
+export const registerList: GenericKeyString<string>[] = [
   {
     name: 'Email',
     type: 'email',

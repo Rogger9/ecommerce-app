@@ -11,14 +11,6 @@ export interface IMenuListNav {
   normalSize?: boolean
 }
 
-export interface IListMenu {
-  [key: string]: string
-}
-
-export interface IListForm {
-  [key:string]: string
-}
-
-export interface IPathTo {
-  [key: string]: string
+export interface GenericKeyString<T> {
+  [key: string]: T
 }

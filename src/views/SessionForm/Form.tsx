@@ -1,10 +1,10 @@
 import Button from '../../components/Button'
 import InputsContainer from './InputsContainer'
-import { IListForm } from '../../types'
+import { GenericKeyString } from '../../types'
 import { StyledForm } from './style'
 
 interface IProps {
-  list: IListForm[]
+  list: GenericKeyString<string>[]
   submit: string
 }
 
