@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Interval } from '../services/Iterval.service'
+import { Services } from '../services'
 
 interface useSliderProps {
   inicialState: number
@@ -10,11 +10,11 @@ export const useSlider = ({ inicialState, restartState }: useSliderProps) => {
   const [counter, setCounter] = useState<number>(inicialState)
 
   useEffect(function () {
-    const interval = Interval.set(() => {
+    const interval = Services.setInterval(() => {
       counter < restartState ? setCounter(counter => counter + 1) : setCounter(inicialState)
     }, 5000)
 
-    return () => Interval.clear(interval)
+    return () => Services.clearInterval(interval)
   }, [counter, inicialState, restartState])
 
   return { counter, setCounter }

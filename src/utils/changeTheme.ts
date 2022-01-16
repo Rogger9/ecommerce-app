@@ -1,9 +1,8 @@
-import { BodyDocument } from '../services/BodyDocument.service'
-import { LocalStorage } from '../services/LocalStorage.service'
+import { Services } from '../services'
 
 export const changeTheme = (name: string = 'theme') => {
-  const themeUser = BodyDocument.get(name)
+  const themeUser = Services.getTheme(name)
   const toUse: string = themeUser === 'dark' ? 'light' : 'dark'
-  LocalStorage.set(name, toUse)
-  BodyDocument.set(name, toUse)
+  Services.setLocalStorage(name, toUse)
+  Services.setTheme(name, toUse)
 }

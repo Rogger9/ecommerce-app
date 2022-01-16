@@ -1,8 +1,7 @@
-import { BodyDocument } from '../services/BodyDocument.service'
-import { LocalStorage } from '../services/LocalStorage.service'
+import { Services } from '../services'
 
 export const checkPrevUserTheme = () => {
-  const savedTheme = LocalStorage.get('theme')
+  const savedTheme = Services.getLocalStorage('theme')
   const themeToUse = savedTheme ?? 'dark'
-  BodyDocument.set('theme', themeToUse)
+  Services.setTheme('theme', themeToUse)
 }
