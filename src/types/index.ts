@@ -4,6 +4,14 @@ export type ChangeEventInput = React.ChangeEventHandler<HTMLInputElement>
 export type ChangeEventForm = React.FormEventHandler<HTMLFormElement>
 export type MouseEventLiElement = React.MouseEventHandler<HTMLLIElement>
 
+export interface IProducts {
+  name: string
+  description: string
+  imageURL: string
+  price: number
+  stock: number
+}
+
 export interface IMenuListNav {
   name: string
   icon: IconProp
