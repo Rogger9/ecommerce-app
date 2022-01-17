@@ -22,4 +22,9 @@ export class Services {
   static getTheme (name: string) {
     return document.body.getAttribute(name)
   }
+
+  static async fetchData (url: string) {
+    const res = await fetch(url)
+    return res.json()
+  }
 }
