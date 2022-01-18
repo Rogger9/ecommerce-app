@@ -9,9 +9,14 @@ export const StyledButton = styled.button<IProps>`
   border-radius: .3rem;
   border: 1px solid var(--blackOpacity);
   outline: none;
-  padding: ${({ page }) => page ? '.6rem' : '.1rem .2rem'};
+  padding: ${({ page }) => page ? '.6rem 1rem' : '.1rem .2rem'};
   font-weight: bold;
   cursor: pointer;
+  color: var(--black);
+  box-shadow:
+    0 0 2px 1px var(--blackOpacity),
+    inset 0 0 2px var(--blackOpacity)
+  ;
 
   &:active { transform: scale(.96) }
 
