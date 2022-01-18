@@ -11,6 +11,8 @@ export const GlobalStyles = createGlobalStyle`
     --contrast: #9BA4B4;
     --black: #2C2C2C;
     --blackOpacity: #2C2C2C99;
+    --green: #3F904F;
+    --red: #B74545;
   }
 
   [theme='light'] {
