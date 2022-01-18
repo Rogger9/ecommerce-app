@@ -4,12 +4,20 @@ import { $ABOUT } from '../../../routes'
 import { StyledView } from './style'
 
 const Slider = lazy(() => import('../../Slider'))
+const ShowProducts = lazy(() => import('../../Products/ShowProducts'))
 const About = lazy(() => import('../../../views/About'))
+
+const InHome = () => (
+  <>
+    <Slider />
+    <ShowProducts />
+  </>
+)
 
 const View = () => (
   <StyledView>
     <Routes>
-      <Route index element={<Slider />} />
+      <Route index element={<InHome />} />
       <Route path={$ABOUT} element={<About />} />
     </Routes>
   </StyledView>
