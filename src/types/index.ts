@@ -5,7 +5,9 @@ export type ChangeEventForm = React.FormEventHandler<HTMLFormElement>
 export type MouseEventLiElement = React.MouseEventHandler<HTMLLIElement>
 
 export interface IProducts {
+  id?: number
   name: string
+  category?: string
   description: string
   imageURL: string
   price: number
