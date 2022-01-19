@@ -7,11 +7,11 @@ export const GlobalStyles = createGlobalStyle`
     --colorSwitch: #262C37;
     --colorBallSwitch: #20242b;
     --secundary: #20262E;
-    --shadow: #C4C4C4;
+    --shadow: #C4C4C499;
     --contrast: #9BA4B4;
     --black: #2C2C2C;
     --blackOpacity: #2C2C2C99;
-    --green: #3F904F;
+    --green: #3D805F;
     --red: #B74545;
   }
 
