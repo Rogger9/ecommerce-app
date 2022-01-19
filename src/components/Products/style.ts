@@ -10,16 +10,19 @@ export const StyledShowProducts = styled(SectionFlex)`
 
 export const StyledProductCard = styled(DivFlex)`
   width: 20rem;
-  background: var(--fontColor);
-  color: var(--black);
+  background: var(--contrast);
   flex-direction: column;
   justify-content: space-between;
   padding: 1rem;
   border-radius: .3rem;
   gap: .6rem;
+  transition: transform .2s ease-in-out;
+  box-shadow:
+    0 0 6px var(--blackOpacity),
+    inset 0 0 6px var(--blackOpacity)
+  ;
 
   img {
-    width: 12rem;
     border-radius: .2rem;
     object-fit: contain;
   }
@@ -31,5 +34,12 @@ export const StyledProductCard = styled(DivFlex)`
     align-items: center;
   }
 
-  h3 { color: var(--red); }
+  h3 { color: var(--green); }
+
+  &:hover {
+    box-shadow:
+    0 0 12px var(--blackOpacity),
+    inset 0 0 6px var(--blackOpacity)
+  ;
+  }
 `

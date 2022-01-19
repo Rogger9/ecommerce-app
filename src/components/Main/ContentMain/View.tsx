@@ -1,6 +1,7 @@
 import { lazy } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { $ABOUT } from '../../../routes'
+import listProducts from '../../../utils/listProducts'
 import { StyledView } from './style'
 
 const Slider = lazy(() => import('../../Slider'))
@@ -10,7 +11,7 @@ const About = lazy(() => import('../../../views/About'))
 const InHome = () => (
   <>
     <Slider />
-    <ShowProducts />
+    <ShowProducts products={listProducts} />
   </>
 )
 

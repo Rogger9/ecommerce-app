@@ -2,43 +2,18 @@ import { IProducts } from '../../types'
 import ProductCard from './ProductCard'
 import { StyledShowProducts } from './style'
 
-const listProducts: IProducts[] = [
-  {
-    name: 'Product name',
-    description: 'This is the product description',
-    imageURL: '',
-    price: 100,
-    stock: 4
-  },
-  {
-    name: 'Product name',
-    description: 'This is the product description',
-    imageURL: '',
-    price: 100,
-    stock: 4
-  },
-  {
-    name: 'Product name',
-    description: 'This is the product description',
-    imageURL: '',
-    price: 100,
-    stock: 4
-  },
-  {
-    name: 'Product name',
-    description: 'This is the product description',
-    imageURL: '',
-    price: 100,
-    stock: 4
-  }
-]
+interface IProps {
+  products: IProducts[] | []
+}
 
-const ShowProducts = () => (
+const ShowProducts = ({ products = [] }: IProps) => (
   <StyledShowProducts>
     {
-      listProducts.map(({ name, description, imageURL, price, stock }) => (
-        <ProductCard key={name} name={name} description={description} imageURL={imageURL} price={price} stock={stock} />
-      ))
+      products.length > 0
+        ? products.map(({ id, name, description, imageURL, price, stock }) => (
+          <ProductCard key={id} name={name} description={description} imageURL={imageURL} price={price} stock={stock} />
+        ))
+        : <h3>There are no products to display</h3>
     }
   </StyledShowProducts>
 )
