@@ -30,7 +30,7 @@ export const StyledNavBar = styled.nav`
   input:checked ~ ul { width: auto; }
 
   @media (max-width: 768px) {
-    height: auto;
+    min-height: auto;
     padding: 0 2rem 0 0;
     border-radius: 0;
 
