@@ -12,6 +12,7 @@ export interface IProducts {
   imageURL: string
   price: number
   stock: number
+  brand: string
 }
 
 export interface IMenuListNav {

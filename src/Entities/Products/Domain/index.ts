@@ -8,8 +8,9 @@ export class Product implements IProducts {
   imageURL: string
   price: number
   stock: number
+  brand: string
 
-  constructor (id: number, name: string, category: string, description: string, imageURL: string, price: number, stock: number) {
+  constructor (id: number, name: string, category: string, description: string, imageURL: string, price: number, stock: number, brand: string) {
     this.id = id
     this.name = name
     this.category = category
@@ -17,5 +18,6 @@ export class Product implements IProducts {
     this.imageURL = imageURL
     this.price = price
     this.stock = stock
+    this.brand = brand
   }
 }

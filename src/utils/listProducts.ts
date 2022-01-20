@@ -7,8 +7,9 @@ const listProducts: IProducts[] = [
     category: 'Electronics',
     description: 'This is the product description',
     imageURL: '',
-    price: 100,
-    stock: 2
+    price: 60,
+    stock: 10,
+    brand: 'LG'
   },
   {
     id: 2,
@@ -17,7 +18,8 @@ const listProducts: IProducts[] = [
     description: 'This is the product description',
     imageURL: '',
     price: 100,
-    stock: 4
+    stock: 2,
+    brand: 'Sony'
   },
   {
     id: 3,
@@ -25,17 +27,19 @@ const listProducts: IProducts[] = [
     category: 'Smart TV',
     description: 'This is the product description',
     imageURL: '',
-    price: 100,
-    stock: 4
+    price: 120,
+    stock: 4,
+    brand: 'Samsung'
   },
   {
     id: 4,
     name: 'Product name',
-    category: 'Books',
+    category: 'Sports',
     description: 'This is the product description',
     imageURL: '',
     price: 100,
-    stock: 6
+    stock: 6,
+    brand: 'Adidas'
   }
 ]
 
