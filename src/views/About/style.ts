@@ -4,12 +4,7 @@ import { SectionContentMain } from '../../styles/SectionContentMain'
 export const StyledAbout = styled(SectionContentMain)`
   flex-direction: column;
   gap: 2rem;
-  animation: move 2s ease-in-out;
-
-  @keyframes move {
-    0% { transform: translate(0, -2%) }
-    100% { transform: translate(0, 0) }
-  }
+  animation: moveDown .4s ease-in;
 
   img { object-fit: contain; }
 

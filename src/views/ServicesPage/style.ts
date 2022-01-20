@@ -5,12 +5,7 @@ import { SectionContentMain } from '../../styles/SectionContentMain'
 export const StyledServicesPage = styled(SectionContentMain)`
   flex-direction: column;
   gap: 4rem;
-  animation: move 1s ease-in;
-
-  @keyframes move {
-    0% { transform: translate(0, -.2%) }
-    100% { transform: translate(0, 0) }
-  }
+  animation: moveDown .4s ease-in;
 `
 
 export const StyledService = styled(DivFlex)`

@@ -42,4 +42,9 @@ export const GlobalStyles = createGlobalStyle`
     color: var(--fontColor);
     scroll-behavior: smooth;
   }
+
+  @keyframes moveDown {
+    0% { transform: translate(0, -.3%) }
+    100% { transform: translate(0, 0) }
+  }
 `
