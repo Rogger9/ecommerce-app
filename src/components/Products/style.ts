@@ -43,3 +43,9 @@ export const StyledProductCard = styled(DivFlex)`
   ;
   }
 `
+
+export const StyledProductDetail = styled(DivFlex)`
+  height: 100%;
+  flex-direction: column;
+  gap: 4rem;
+`

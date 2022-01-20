@@ -11,7 +11,7 @@ const ShowProducts = ({ products = [] }: IProps) => (
     {
       products.length > 0
         ? products.map(({ id, name, description, imageURL, price, stock }) => (
-          <ProductCard key={id} name={name} description={description} imageURL={imageURL} price={price} stock={stock} />
+          <ProductCard key={id} id={id} name={name} description={description} imageURL={imageURL} price={price} stock={stock} />
         ))
         : <h3>There are no products to display</h3>
     }
