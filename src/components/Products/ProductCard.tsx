@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { IProducts } from '../../types'
-import { $HOME, $PRODUCT } from '../../routes'
+import { $HOME, $PRODUCTSDETAIL } from '../../routes'
 import Icon from '../Icon'
 import Button from '../Button'
 import { StyledProductCard } from './style'
@@ -10,7 +10,7 @@ const ProductCard = ({ id, name, description, imageURL = '', price, stock }: IPr
   const imageToUse = imageURL !== '' ? imageURL : imageProductDefault
 
   return (
-    <Link to={`${$HOME + $PRODUCT}/${id}`}>
+    <Link to={`${$HOME + $PRODUCTSDETAIL}/${id}`}>
       <StyledProductCard>
         <header>
           <h2>{name}</h2>

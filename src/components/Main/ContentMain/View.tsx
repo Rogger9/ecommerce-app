@@ -1,19 +1,18 @@
 import { lazy } from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { $ABOUT, $DETAIL, $PRODUCT, $SERVICES } from '../../../routes'
-import listProducts from '../../../utils/listProducts'
+import { $ABOUT, $CATEGORY, $DETAIL, $PRODUCTS, $PRODUCTSDETAIL, $SERVICES } from '../../../routes'
 import { StyledView } from './style'
 
 const Slider = lazy(() => import('../../Slider'))
-const ShowProducts = lazy(() => import('../../Products/ShowProducts'))
+const ListOfProducts = lazy(() => import('../../Products/ListOfProducts'))
 const About = lazy(() => import('../../../views/About'))
-const ProductDetail = lazy(() => import('../../Products/ProductDetail'))
 const ServicesPage = lazy(() => import('../../../views/ServicesPage'))
+const ProductDetail = lazy(() => import('../../Products/ProductDetail'))
 
 const InHome = () => (
   <>
     <Slider />
-    <ShowProducts products={listProducts} />
+    <ListOfProducts />
   </>
 )
 
@@ -22,8 +21,9 @@ const View = () => (
     <Routes>
       <Route index element={<InHome />} />
       <Route path={$ABOUT} element={<About />} />
-      <Route path={$PRODUCT + $DETAIL} element={<ProductDetail />} />
+      <Route path={$PRODUCTS + $CATEGORY} element={<ListOfProducts />} />
       <Route path={$SERVICES} element={<ServicesPage />} />
+      <Route path={$PRODUCTSDETAIL + $DETAIL} element={<ProductDetail />} />
     </Routes>
   </StyledView>
 )

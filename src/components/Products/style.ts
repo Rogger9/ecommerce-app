@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { DivFlex } from '../../styles/DivFlex'
 import { SectionFlex } from '../../styles/SectionFlex'
 
-export const StyledShowProducts = styled(SectionFlex)`
+export const StyledListOfProducts = styled(SectionFlex)`
   margin: 3rem 1rem;
   flex-wrap: wrap;
   gap: 4rem;
@@ -47,5 +47,5 @@ export const StyledProductCard = styled(DivFlex)`
 export const StyledProductDetail = styled(DivFlex)`
   height: 100%;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2rem;
 `
