@@ -1,9 +1,14 @@
-import { createContext, ReactNode, useState } from 'react'
+import { createContext, useState } from 'react'
 import { IProducts } from '../types'
 
-const GlobalState = createContext({})
+interface IContext {
+  products?: IProducts[]
+  setProducts?: React.Dispatch<React.SetStateAction<IProducts[]>>
+}
 
-export const GlobalStateProvier = ({ children }: { children: ReactNode }) => {
+const GlobalState = createContext<IContext>({})
+
+export const GlobalStateProvier = ({ children }: { children: React.ReactNode }) => {
   const [products, setProducts] = useState<IProducts[]>([])
   return (
     <GlobalState.Provider value={{ products, setProducts }}>
