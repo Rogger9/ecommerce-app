@@ -7,7 +7,8 @@ const listProducts: GenericKeyString<IProducts[]> = {
   Cellphones: cellphonesProducts,
   Clothes: clothesProducts,
   Books: booksProducts,
-  Sports: sportsProducts
+  Sports: sportsProducts,
+  'trending-products': trendingProducts
 }
 
 export class api {
