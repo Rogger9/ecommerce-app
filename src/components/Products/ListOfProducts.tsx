@@ -12,7 +12,6 @@ const ListOfProducts = () => {
   useEffect(() => {
     api.search(category).then(setProducts)
   }, [category])
-  console.log(products)
 
   return (
     <StyledListOfProducts>

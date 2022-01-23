@@ -3,7 +3,7 @@ import { GenericKeyString, IProducts } from './types'
 
 const listProducts: GenericKeyString<IProducts[]> = {
   Electronics: electronicsProducts,
-  'Smart TV': smartTVProducts,
+  'Smart-TV': smartTVProducts,
   Cellphones: cellphonesProducts,
   Clothes: clothesProducts,
   Books: booksProducts,
@@ -14,6 +14,6 @@ const listProducts: GenericKeyString<IProducts[]> = {
 export class api {
   static search (query?: string): Promise<IProducts[]> {
     const result = query ? listProducts[query] : trendingProducts
-    return new Promise(resolve => setTimeout(() => resolve(result), 800))
+    return new Promise(resolve => setTimeout(() => resolve(result), 600))
   }
 }
