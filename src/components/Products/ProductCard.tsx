@@ -6,7 +6,7 @@ import Button from '../Button'
 import { StyledProductCard } from './style'
 import imageProductDefault from '../../assets/ProductImage.avif'
 
-const ProductCard = ({ id, name, description, imageURL = '', price, stock }: IProducts) => {
+const ProductCard = ({ id, name, description, imageURL = '', price, stock, category }: IProducts) => {
   const imageToUse = imageURL !== '' ? imageURL : imageProductDefault
 
   return (
@@ -18,9 +18,10 @@ const ProductCard = ({ id, name, description, imageURL = '', price, stock }: IPr
         </header>
         <img src={imageToUse} alt={name} width='240' height='160' />
         <h3>${price}</h3>
+        <span><b>Category:</b> {category}</span>
         <footer>
           <Button label='iconHeart' page><Icon iconStyle='fas' icon='heart' /></Button>
-          <span>stock: {stock}</span>
+          <span>Stock: {stock}</span>
           <Button label='iconShopping' page><Icon iconStyle='fas' icon='shopping-cart' /></Button>
         </footer>
       </StyledProductCard>

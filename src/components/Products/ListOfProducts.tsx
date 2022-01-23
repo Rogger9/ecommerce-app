@@ -17,8 +17,8 @@ const ListOfProducts = () => {
     <StyledListOfProducts>
       {
         products && products.length > 0
-          ? products.map(({ id, name, description, imageURL, price, stock }) => (
-            <ProductCard key={id} id={id} name={name} description={description} imageURL={imageURL} price={price} stock={stock} />
+          ? products.map(({ id, name, description, imageURL, price, stock, category }) => (
+            <ProductCard key={id} id={id} name={name} description={description} imageURL={imageURL} price={price} stock={stock} category={category} />
           ))
           : <h3>There are no products to display</h3>
       }

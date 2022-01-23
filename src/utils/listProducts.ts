@@ -7,7 +7,7 @@ export const trendingProducts: IProducts[] = [
     category: 'Electronics',
     description: 'This is the product description',
     imageURL: '',
-    price: 60,
+    price: 46,
     stock: 10,
     brand: 'LG'
   },
@@ -50,8 +50,8 @@ export const electronicsProducts: IProducts[] = [
     category: 'Electronics',
     description: 'This is the product description',
     imageURL: '',
-    price: 60,
-    stock: 10,
+    price: 22,
+    stock: 11,
     brand: 'LG'
   },
   {
@@ -70,8 +70,8 @@ export const electronicsProducts: IProducts[] = [
     category: 'Electronics',
     description: 'This is the product description',
     imageURL: '',
-    price: 120,
-    stock: 4,
+    price: 72,
+    stock: 7,
     brand: 'Samsung'
   },
   {
@@ -81,7 +81,7 @@ export const electronicsProducts: IProducts[] = [
     description: 'This is the product description',
     imageURL: '',
     price: 100,
-    stock: 6,
+    stock: 16,
     brand: 'LG'
   },
   {
@@ -123,8 +123,8 @@ export const sportsProducts: IProducts[] = [
     category: 'Sports',
     description: 'This is the product description',
     imageURL: '',
-    price: 100,
-    stock: 2,
+    price: 70,
+    stock: 9,
     brand: 'Nike'
   },
   {
@@ -143,7 +143,7 @@ export const sportsProducts: IProducts[] = [
     category: 'Sports',
     description: 'This is the product description',
     imageURL: '',
-    price: 100,
+    price: 135,
     stock: 6,
     brand: 'Adidas'
   },
