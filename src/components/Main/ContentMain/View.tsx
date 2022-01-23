@@ -1,5 +1,6 @@
 import { lazy } from 'react'
 import { Route, Routes } from 'react-router-dom'
+import { GlobalStateProvier } from '../../../context/GlobalState'
 import { $ABOUT, $CATEGORY, $DETAIL, $PRODUCTS, $PRODUCTSDETAIL, $SERVICES } from '../../../routes'
 import { StyledView } from './style'
 
@@ -17,15 +18,17 @@ const InHome = () => (
 )
 
 const View = () => (
-  <StyledView>
-    <Routes>
-      <Route index element={<InHome />} />
-      <Route path={$ABOUT} element={<About />} />
-      <Route path={$PRODUCTS + $CATEGORY} element={<ListOfProducts />} />
-      <Route path={$SERVICES} element={<ServicesPage />} />
-      <Route path={$PRODUCTSDETAIL + $DETAIL} element={<ProductDetail />} />
-    </Routes>
-  </StyledView>
+  <GlobalStateProvier>
+    <StyledView>
+      <Routes>
+        <Route index element={<InHome />} />
+        <Route path={$ABOUT} element={<About />} />
+        <Route path={$PRODUCTS + $CATEGORY} element={<ListOfProducts />} />
+        <Route path={$SERVICES} element={<ServicesPage />} />
+        <Route path={$PRODUCTSDETAIL + $DETAIL} element={<ProductDetail />} />
+      </Routes>
+    </StyledView>
+  </GlobalStateProvier>
 )
 
 export default View
