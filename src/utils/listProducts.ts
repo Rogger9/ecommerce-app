@@ -176,8 +176,8 @@ export const clothesProducts: IProducts[] = [
     category: 'Clothes',
     description: 'This is the product description',
     imageURL: '',
-    price: 12,
-    stock: 8,
+    price: 18,
+    stock: 1,
     brand: 'New Balance'
   },
   {
@@ -186,8 +186,8 @@ export const clothesProducts: IProducts[] = [
     category: 'Clothes',
     description: 'This is the product description',
     imageURL: '',
-    price: 30,
-    stock: 5,
+    price: 15,
+    stock: 4,
     brand: 'Nike'
   }
 ]

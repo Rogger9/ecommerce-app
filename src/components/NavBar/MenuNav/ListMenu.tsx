@@ -10,7 +10,7 @@ const SubListNav = lazy(() => import('./SubListNav'))
 const setPath = (path: string): string => {
   const normalizePath = path.toLowerCase().replace(/\s/g, '-')
   if (normalizePath === 'home') return $HOME
-  if (normalizePath === 'categories') return ''
+  if (normalizePath === 'categories') return '#'
   if (normalizePath === 'trending-products') return $HOME + $PRODUCTS + '/' + normalizePath
   return $HOME + '/' + normalizePath
 }
