@@ -38,20 +38,22 @@ export const StyledLiMenu = styled.li`
 
   ul {
     background: var(--secundary);
-    display: none;
     position: absolute;
     top: 0;
     left: 100%;
     border-radius: .2rem;
     box-shadow: 0 0 1px 1px var(--shadow);
     z-index: 20;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .2s ease-in;
 
     li { padding: 0 2rem; }
   }
 
   &:hover { background: var(--contrast); }
 
-  &:hover > ul { display: block; }
+  &:hover > ul { visibility: visible; opacity: 1; }
 
   @media (max-width: 768px) {
     border-bottom: none;

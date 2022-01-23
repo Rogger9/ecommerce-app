@@ -21,8 +21,7 @@ const ListMenu = ({ name, icon, subMenu, normalSize = true }: IMenuListNav) => (
       <div><Icon iconStyle='fas' icon={icon} /></div>
       {normalSize && name}
     </Link>
-    {
-      subMenu !== undefined && <SubListNav subMenu={subMenu} />
+    { subMenu && <SubListNav subMenu={subMenu} />
     }
   </StyledLiMenu>
 )
