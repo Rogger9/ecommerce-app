@@ -10,8 +10,11 @@ const ListOfProducts = () => {
   const { products, setProducts } = useProducts()
 
   useEffect(() => {
+    setProducts && setProducts([])
     api.search(category).then(setProducts)
   }, [category])
+
+  if (!products) return <h2>Sorry... There are no products to display</h2>
 
   return (
     <StyledListOfProducts>
@@ -20,7 +23,7 @@ const ListOfProducts = () => {
           ? products.map(({ id, name, description, imageURL, price, stock, category }) => (
             <ProductCard key={id} id={id} name={name} description={description} imageURL={imageURL} price={price} stock={stock} category={category} />
           ))
-          : <h3>There are no products to display</h3>
+          : <h3>Loading...</h3>
       }
     </StyledListOfProducts>
   )

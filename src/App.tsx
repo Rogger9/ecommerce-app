@@ -13,7 +13,7 @@ function App () {
 
   return (
     <BrowserRouter>
-      <Suspense fallback={<h2>Cargando...</h2>}>
+      <Suspense fallback={null}>
         <GlobalStyles />
         <ContainerApp>
           <Routes>
