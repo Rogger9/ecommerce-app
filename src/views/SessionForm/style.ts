@@ -1,11 +1,13 @@
 import styled from 'styled-components'
 import { DivFlex } from '../../styles/DivFlex'
-import { FormFlex } from '../../styles/FormFlex'
 
-export const StyledSessionForm = styled(DivFlex)`
+export const StyledSessionForm = styled.form`
   width: 70%;
   min-height: 28rem;
   background: var(--contrast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   justify-content: space-evenly;
   border-radius: .4rem;
@@ -50,8 +52,11 @@ export const StyledSessionForm = styled(DivFlex)`
   }
 `
 
-export const StyledForm = styled(FormFlex)`
+export const StyledForm = styled.form`
   width: 66%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   gap: 1.2rem;
   padding: .4rem;

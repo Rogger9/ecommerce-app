@@ -1,9 +1,11 @@
 import styled from 'styled-components'
 import { DivFlex } from '../../../styles/DivFlex'
-import { FormFlex } from '../../../styles/FormFlex'
 
-export const StyledFormSearch = styled(FormFlex)`
+export const StyledFormSearch = styled.form`
   height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
 
   input[type='checkbox'] { display:none; }
