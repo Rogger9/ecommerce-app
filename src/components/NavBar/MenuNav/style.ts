@@ -61,6 +61,8 @@ export const StyledLiMenu = styled.li`
     a { gap: 6rem; }
 
     ul {
+      display: flex;
+      flex-direction: column;
       top: 100%;
       left: auto;
       right: 0;

@@ -12,8 +12,13 @@ export const StyledBrandsPage = styled(SectionContentMain)`
     border-radius: .2rem;
 
     img {
+      width: 100%;
       object-fit: contain;
       border-radius: .2rem;
+    }
+
+    @media (max-width: 320px) {
+      width: 17rem;
     }
   }
 `
