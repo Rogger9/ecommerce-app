@@ -10,6 +10,7 @@ const About = lazy(() => import('../../../views/About'))
 const ServicesPage = lazy(() => import('../../../views/ServicesPage'))
 const ProductDetail = lazy(() => import('../../Products/ProductDetail'))
 const BrandsPage = lazy(() => import('../../../views/BrandsPage'))
+const View404 = lazy(() => import('./View404'))
 
 const InHome = () => (
   <>
@@ -28,6 +29,7 @@ const View = () => (
         <Route path={$SERVICES} element={<ServicesPage />} />
         <Route path={$PRODUCTSDETAIL + $DETAIL} element={<ProductDetail />} />
         <Route path={$BRANDS} element={<BrandsPage />} />
+        <Route path='*' element={<View404 />} />
       </Routes>
     </StyledView>
   </GlobalStateProvier>

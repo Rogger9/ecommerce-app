@@ -7,6 +7,7 @@ import { $ACCOUNTS, $HOME } from './routes'
 
 const Home = lazy(() => import('./views/Home'))
 const SessionForm = lazy(() => import('./views/SessionForm'))
+const PageError = lazy(() => import('./views/404Page'))
 
 function App () {
   checkPrevUserTheme()
@@ -19,6 +20,7 @@ function App () {
           <Routes>
             <Route path={$HOME + '/*'} element={<Home />} />
             <Route path={$HOME + $ACCOUNTS + '/*'} element={<SessionForm />} />
+            <Route path='*' element={<PageError />} />
           </Routes>
         </ContainerApp>
       </Suspense>
