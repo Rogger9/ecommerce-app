@@ -46,7 +46,7 @@ export const StyledLiMenu = styled.li`
     z-index: 20;
     visibility: hidden;
     opacity: 0;
-    transition: visibility .2s ease-in;
+    transition: visibility, opacity .2s ease-in;
 
     li { padding: 0 2rem; }
   }

@@ -116,7 +116,7 @@ export const BoxInputSearch = styled(DivFlex)`
   border-radius: 1rem;
   border: 2px solid transparent;
   position: relative;
-  transition: width .2s ease-in-out;
+  transition: width .3s ease-in;
 
   input:focus { box-shadow: 0 0 4px var(--shadow) }
 

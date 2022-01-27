@@ -42,15 +42,12 @@ export const StyledSwitch = styled.label`
     position: absolute;
     left: 0;
     margin: 0 2px;
-    transition: width .2s ease-in-out;
+    transition: transform .2s ease-in;
   }
 
   span:hover {
     box-shadow: inset 0 0 3px var(--contrast);
   }
 
-  input:checked ~ span {
-    left: auto;
-    right: 0;
-  }
+  input:checked ~ span { transform: translateX(.86rem); }
 `
