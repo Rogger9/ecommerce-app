@@ -27,13 +27,13 @@ export const StyledNavBar = styled.nav`
 
   input { display: none; }
 
-  input:checked ~ ul { width: auto; }
+  input:checked ~ ul { width: 3rem; }
 
   @media (max-width: 768px) {
     min-height: auto;
     padding: 0 2rem 0 0;
     border-radius: 0;
 
-    input:checked ~ ul { flex-direction: column; }
+    input:checked ~ ul { width: 100%; flex-direction: column; }
   }
 `

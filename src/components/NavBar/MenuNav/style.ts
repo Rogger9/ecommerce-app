@@ -10,7 +10,7 @@ export const StyledMenuNav = styled.ul`
   svg { cursor: pointer; }
 
   @media (max-width: 768px) {
-    width: auto;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
   }
@@ -37,6 +37,7 @@ export const StyledLiMenu = styled.li`
   }
 
   ul {
+    width: auto;
     background: var(--secundary);
     position: absolute;
     top: 0;
@@ -46,7 +47,7 @@ export const StyledLiMenu = styled.li`
     z-index: 20;
     visibility: hidden;
     opacity: 0;
-    transition: visibility, opacity .2s ease-in;
+    transition: visibility, opacity, .2s ease-in;
 
     li { padding: 0 2rem; }
   }
