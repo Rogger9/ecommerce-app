@@ -48,4 +48,13 @@ export const StyledProductDetail = styled(DivFlex)`
   height: 100%;
   flex-direction: column;
   gap: 2rem;
+
+  h1 {
+    background: var(--contrast);
+    color: var(--white);
+    padding: 1rem 4rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 2px 1px var(--contrast),
+    inset 0 0 6px var(--blackOpacity);
+  }
 `

@@ -14,9 +14,9 @@ const ProductsDetail = () => {
       {
         product
           ? <>
-            <h1>ProductDetail: {product.name}</h1>
-            <p>Brand: {product.brand}</p>
-            <span>Category: {product.category}</span>
+            <h1>{product.name.toUpperCase()}</h1>
+            <p><b>Brand: </b>{product.brand}</p>
+            <span><b>Category: </b>{product.category}</span>
             <ProductCard {...product} />
           </>
           : <h1>Error...</h1>
