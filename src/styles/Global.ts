@@ -13,6 +13,7 @@ export const GlobalStyles = createGlobalStyle`
     --blackOpacity: #2C2C2C99;
     --green: #3D805F;
     --red: #B74545;
+    --white: #FCFCFC;
   }
 
   [theme='light'] {
