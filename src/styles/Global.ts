@@ -45,7 +45,19 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   @keyframes moveDown {
-    0% { transform: translate(0, -.3%) }
-    100% { transform: translate(0, 0) }
+    0% { transform: translate(0, -.3%); opacity: 0; }
+    100% { transform: translate(0, 0); opacity: 1; }
+  }
+
+  @keyframes moveDelay {
+    0% {
+      transform: translate(-1%, -2%);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(0, 0);
+      opacity: 1;
+      visibility: visible;
+    }
   }
 `
