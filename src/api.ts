@@ -2,12 +2,12 @@ import { booksProducts, cellphonesProducts, clothesProducts, electronicsProducts
 import { GenericKeyString, IProducts } from './types'
 
 const listProducts: GenericKeyString<IProducts[]> = {
-  Electronics: electronicsProducts,
-  'Smart-TV': smartTVProducts,
-  Cellphones: cellphonesProducts,
-  Clothes: clothesProducts,
-  Books: booksProducts,
-  Sports: sportsProducts,
+  electronics: electronicsProducts,
+  'smart-tv': smartTVProducts,
+  cellphones: cellphonesProducts,
+  clothes: clothesProducts,
+  books: booksProducts,
+  sports: sportsProducts,
   'trending-products': trendingProducts
 }
 

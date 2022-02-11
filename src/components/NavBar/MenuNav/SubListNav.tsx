@@ -7,7 +7,7 @@ interface IProps {
 }
 
 const setPath = (path: string): string => {
-  const normalizePath = path.replace(/\s/g, '-')
+  const normalizePath = path.replace(/\s/g, '-').toLowerCase()
   return $HOME + $PRODUCTS + '/' + normalizePath
 }
 
