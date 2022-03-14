@@ -10,7 +10,7 @@ export const StyledServicesPage = styled(SectionContentMain)`
 
 export const StyledService = styled(DivFlex)`
   flex-direction: column;
-  border: 1px solid var(--shadow);
+  border: 2px solid var(--shadow);
   border-radius: .3rem;
   padding: 1.4rem;
   gap: 1rem;

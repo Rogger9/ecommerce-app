@@ -20,16 +20,17 @@ export const StyledFormSearch = styled.form`
     position: absolute;
     right: 0;
     border-radius: 50%;
-    border: 2px solid var(--contrast);
+    border: 2px solid var(--black);
     cursor: pointer;
   }
 
 
   label[for='check']:hover {
-    box-shadow: 0 0 3px var(--contrast)
+    box-shadow: 0 0 4px var(--contrast);
+    border: 2px solid transparent;
   }
 
-  label > svg { color: var(--contrast); }
+  label > svg { color: var(--black); }
 
   input[type='text'] {
     width: 100%;
@@ -126,12 +127,18 @@ export const BoxInputSearch = styled(DivFlex)`
     left: .6rem;
     cursor: pointer;
 
-    &:hover { color: var(--contrast); }
+    &:hover { color: var(--red); }
   }
 
   button {
     position: absolute;
     right: 2.2rem;
+    box-shadow: 0 0 3px var(--blackOpacity);
+    border: none;
+    font-weight: normal;
+    padding: .2rem .4rem .2rem;
+
+    &:hover { background: var(--primary); color: var(--fontColor); border: none; }
   }
 
   @media (max-width: 650px) {

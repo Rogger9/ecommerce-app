@@ -52,7 +52,7 @@ export const StyledLiMenu = styled.li`
     li { padding: 0 2rem; }
   }
 
-  &:hover { background: var(--contrast); }
+  &:hover { background: var(--primary); }
 
   &:hover > ul { visibility: visible; opacity: 1; }
 

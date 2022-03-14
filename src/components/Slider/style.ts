@@ -13,17 +13,21 @@ export const StyledSlider = styled(SectionFlex)`
     border-radius: .2rem;
   }
 
-  @media ( max-width: 850px ) {
+  @media ( max-width: 920px ) {
     height: 12rem;
   }
 
-  @media ( max-width: 768px ) {
+  @media ( max-width: 820px ) {
     height: 10rem;
+  }
+
+  @media ( max-width: 768px ) {
+    height: 9rem;
     font-size: .6rem;
   }
 
   @media ( max-width: 480px ) {
-    height: 8rem;
+    height: 7rem;
   }
 
   @media ( max-width: 380px ) {

@@ -11,8 +11,7 @@ export const StyledBrandsPage = styled(SectionContentMain)`
 `
 
 export const StyledContentImage = styled.div<IProps>`
-  background: var(--fontColor);
-  color: var(--black);
+  background: var(--contrast);
   padding: 1.4rem;
   border-radius: .2rem;
   animation: ${({ delay }) => `moveDelay .6s ${delay}s ease-in-out`};

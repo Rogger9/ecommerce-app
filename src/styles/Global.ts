@@ -2,10 +2,8 @@ import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
   :root {
-    --primary: #262D39;
+    /* --primary: #262D39;
     --fontColor: #FFF;
-    --colorSwitch: #262C37;
-    --colorBallSwitch: #20242b;
     --secundary: #20262E;
     --shadow: #C4C4C499;
     --contrast: #9BA4B4;
@@ -13,16 +11,33 @@ export const GlobalStyles = createGlobalStyle`
     --blackOpacity: #2C2C2C99;
     --green: #3D805F;
     --red: #B74545;
+    --white: #FCFCFC; */
+
+    --primary: #3B75A9;
+    --secundary: #23649E;
+    --contrast: #EEEEEE;
+    --fontColor: #FFF;
+    --shadow: #3066A74D;
     --white: #FCFCFC;
+    --black: #2C2C2C;
+    --blackOpacity: #2C2C2C99;
+    --green: #3D805F;
+    --red: #B74545;
   }
 
   [theme='light'] {
-    --primary: #F1F6F9;
-    --fontColor: #2C2C2C;
-    --colorSwitch: #DDE3E7;
-    --colorBallSwitch: #E5E5E6;
+    /* --primary: #F1F6F9;
     --secundary: #E4E8E9;
-    --shadow: #2C2C2C;
+    --contrast: #EEEEEE;
+    --fontColor: #2C2C2C;
+    --shadow: #2C2C2C4D; */
+
+    --primary: #DCECFF;
+    --secundary: #CCE3FF;
+    /* --contrast: #B5CFF0; */
+    --contrast: #A6C7F1;
+    --fontColor: #2C2C2C;
+    --shadow: #9BBDE74D;
   }
 
   *,
