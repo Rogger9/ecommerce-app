@@ -7,7 +7,7 @@ export const ContainerApp = styled(DivFlex)`
   text-align: center;
 
   a {
-    color: var(--fontColor);
+    color: ${({ theme }) => theme.colors.text};
     text-decoration: none;
   }
 `

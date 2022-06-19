@@ -3,9 +3,9 @@ import styled from 'styled-components'
 export const StyledLoader = styled.span`
   width: 48px;
   height: 48px;
-  border: 5px solid var(--fontColor);
+  border: 5px solid ${({ theme }) => theme.colors.text};
   border-bottom-color: transparent;
-  border-radius: 50%;
+  border-radius: 100vh;
   display: inline-block;
   box-sizing: border-box;
   animation: rotation 1s linear infinite;

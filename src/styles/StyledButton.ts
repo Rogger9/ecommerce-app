@@ -5,24 +5,22 @@ interface IProps {
 }
 
 export const StyledButton = styled.button<IProps>`
-  background: #FFF;
-  border-radius: .3rem;
-  border: 1px solid var(--blackOpacity);
-  outline: none;
-  padding: ${({ page }) => page ? '.6rem 1rem' : '.1rem .2rem'};
+  background: #fff;
+  color: black;
+  padding: ${({ page }) => (page ? '8px 16px' : '2px 4px')};
   font-weight: bold;
+  border: ${({ theme }) => theme.border.solid};
+  outline: none;
+  border-radius: ${({ theme }) => theme.border.radius};
+  box-shadow: 0 0 2px 1px black, inset 0 0 2px black;
   cursor: pointer;
-  color: var(--black);
-  box-shadow:
-    0 0 2px 1px var(--blackOpacity),
-    inset 0 0 2px var(--blackOpacity)
-  ;
 
-  &:active { transform: scale(.96) }
+  &:active {
+    transform: scale(0.96);
+  }
 
   &:hover {
-    background: ${({ page }) => page ? 'var(--primary)' : 'var(--contrast)'};
-    border: 1px solid var(--blackOpacity);
-    color: ${({ page }) => page ? 'var(--fontColor)' : undefined};
+    background: ${({ page, theme }) => (page ? theme.colors.primary : theme.colors.contrast)};
+    color: ${({ page, theme }) => page && theme.colors.text};
   }
 `
