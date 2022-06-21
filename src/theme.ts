@@ -1,4 +1,4 @@
-import { GenericKeyString } from './types'
+import { GenericKeyString } from '@types'
 
 const scampi = {
   '50': '#f4f4fa',
@@ -45,7 +45,7 @@ export interface ITheme {
   }
 }
 
-export const theme = (mode: GenericKeyString<string>): ITheme => ({
+export const getTheme = (mode: GenericKeyString<string>): ITheme => ({
   font: {
     family:
       '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif',
